@@ -17,7 +17,7 @@ class DirectionTest {
 
     @Test
     void of_shouldThrowIllegalArgumentException() {
-        assertThrows(AssertionError.class, () -> Position.Direction.of(0, 0));
+        assertThrows(IllegalArgumentException.class, () -> Position.Direction.of(0, 0));
     }
 
 }
